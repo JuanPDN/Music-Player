@@ -5,9 +5,9 @@ module.exports = {
     colors: {
       primary: "#C93B76",
       secundary: "#212936",
-      "text-primary": "#E5E7EB",
-      "text-secundary": "#4D5562",
-      "text-secundary-2": "#121826a6",
+      "primary-2": "#E5E7EB",
+      "secundary-2": "#4D5562",
+      "secundary-3": "#121826a6",
     },
     fontFamily: {
       inter: ['"Inter"', "sans-serif"],

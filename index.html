@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/output.css">
     <title>Document</title>
 </head>
-<body class="bg-hero-bg">
-    
+
+<body class="bg-hero-bg flex h-screen justify-center items-center font-inter">
+    <div class="card bg-secundary-3/50 p-5 rounded-3xl flex flex-col items-center">
+        <img class="size-72 rounded-2xl" src="./src/assets/cover-1.png" alt="cover-1">
+        <div class="mt-4 mb-6">
+            <h1 class="text-primary-2 text-base text-center">Lost in the City Lights</h1>
+            <h2 class="text-secundary-2 text-center text-xs mt-1">Cosmo Sheldrake</h2>
+        </div>
+        <div class="w-full flex justify-between">
+            <span class="text-[10px] text-secundary-2">0:00</span>
+            <span class="text-[10px] text-secundary-2">0:00</span>
+        </div>
+        <div class="w-full h-1 bg-primary-2 rounded-full">
+            <audio src="./src/songs/forest-lullaby-110624.mp3" id="main-audio"></audio>
+        </div>
+        <div class="flex gap-5 pt-9 pb-2">
+            <button class="prev">
+                <img src="./src/assets/Stop_and_play_fill-1.svg" alt="prev">
+            </button>
+
+            <button class="play-pause">
+                <img class="bg-primary size-[50px] rounded-full" src="./src/assets/Play_fill.svg" alt="Play_fill">
+            </button>
+
+            <button class="next">
+                <img src="./src/assets/Stop_and_play_fill.svg" alt="next">
+            </button>
+        </div>
+    </div>
 </body>
 <script src="./js/main.js"></script>
+
 </html>
