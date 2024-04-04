@@ -51,7 +51,7 @@ function play() {
     icon.src = "./src/assets/Pause_fill.svg";
   } else {
     audio.pause();
-    icon.src = "./src/assets/play_fill.svg";
+    icon.src = "./src/assets/Play_fill.svg";
   }
 }
 
