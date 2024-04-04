@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/image/favicon.ico" type="image/x-icon" sizes="any">
     <link rel="stylesheet" href="./src/style/output.css">
-    <title>Document</title>
+    <title>Music Player</title>
 </head>
 
 <body class="bg-hero-bg flex h-screen justify-center items-center font-inter">
     <div class="card bg-secundary-3/50 p-5 rounded-3xl flex flex-col items-center">
-        <img class="size-72 rounded-2xl" src="./src/assets/cover-1.png" alt="cover-1">
+        <img class="image size-72 rounded-2xl">
         <div class="mt-4 mb-6">
-            <h1 class="text-primary-2 text-base text-center">Lost in the City Lights</h1>
-            <h2 class="text-secundary-2 text-center text-xs mt-1">Cosmo Sheldrake</h2>
+            <h1 class="title text-primary-2 text-base text-center"></h1>
+            <h2 class="author text-secundary-2 text-center text-xs mt-1"></h2>
         </div>
-        <div class="w-full flex justify-between">
+        <div class="time w-full flex justify-between">
             <span class="text-[10px] text-secundary-2">0:00</span>
             <span class="text-[10px] text-secundary-2">0:00</span>
         </div>
-        <div class="progres-area w-full h-1 bg-primary-2 rounded-full">
-            <audio src="./src/songs/forest-lullaby-110624.mp3" id="main-audio"></audio>
+        <div class="progress-area cursor-pointer w-full h-1 bg-primary-2 rounded-full">
+            <div class="w-0 progress-bar bg-primary h-full rounded-full transition-[width] duration-100"></div>
+            <audio id="main-audio"></audio>
         </div>
         <div class="flex gap-5 pt-9 pb-2">
             <button class="prev">
                 <img src="./src/assets/Stop_and_play_fill-1.svg" alt="prev">
             </button>
 
-            <button class="play-pause">
+            <button class="play-pause flex">
                 <img class="bg-primary size-[50px] rounded-full" src="./src/assets/Play_fill.svg" alt="Play_fill">
             </button>
 
